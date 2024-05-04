@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ahmed MH</title>
+</head>
+<body>
+
+
+<header>
+    <h2>
+        Welcome Back <span class="name" > ... </span>
+    </h2>
+    <img src="images/logo.png" alt="" class="logo_img">
+
+    <button class="login_label">Login</button>
+</header>
+
+
+<section class="popup hidden">
+    <img class="close" src="images/close-square-svgrepo-com.svg">
+    <input class="username" type="text"placeholder="username">
+    <input class="pin" type="text" placeholder="pin">
+    <button class="login_form">LOGIN</button>
+</section>
+
+<section class="content hidden">
+    <!-- before -->
+    <div class="left">
+        
+        <!-- after -->
+        <!-- <div class="card type-deposit">
+            <div class="deposit">deposit</div>
+            <p class="mov">100</p>
+        </div>
+        <div class="card type-withdraw">
+            <div class="deposit">withdraw</div>
+            <p class="mov">-299</p>
+        </div> -->
+
+
+        <!-- before end -->
+    </div>
+    <div class="right">
+        <h2>Transfer Money</h2>
+
+        <div class="data">
+            <input type="text" class="transfare_to" placeholder="Transfer to">
+            <input type="text" class="amount" placeholder="Amount">
+            <button class="trans_money_btn">→</button>
+        </div>
+
+        <h3>Total : $<span class="total_mov">0</span></h3>
+        <h3>Current Balance: $<span class="total_deposit">0</span></h3>
+        <h3>Total Withdraw: $<span class="total_withdraw">0</span></h3>
+    </div>
+</section>
+
+
+
+
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

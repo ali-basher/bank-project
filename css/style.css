@@ -1,0 +1,192 @@
+
+
+
+:root{
+    --background_1:linear-gradient(90deg,  rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --background_2:linear-gradient(90deg,  #512DA8  35%,#673AB7 100%);
+    --background_3:linear-gradient(90deg, #363795  35%,#005C97 100%);
+    --background_4:linear-gradient(90deg, darkred  35% ,crimson 100%, red);
+    --color:white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Raleway;
+    background-color: #1d1d1d;
+    color: white;
+}
+.login_label{
+    padding: 18px 24px;
+    font-size: 20px;
+    width: 160px;
+    background: var(--background_2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo_img{
+    width: 120px;
+    object-fit: cover;
+}
+
+.name{
+    font-weight: bold;
+    color: #7943da;
+    font-size: 26px;
+}
+
+header{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+section.content{
+
+    margin: 100px;
+    height: 700px;
+    display: flex;
+    gap: 30px;
+}
+
+div.left{
+ flex: 1;
+ overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.left .card{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+.type-deposit{
+    background:var(--background_3);
+    color: #512DA8;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.type-withdraw{
+    background:var(--background_4);
+    color: crimson;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.withdraw,.deposit{
+    width: 80px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.mov{
+    color: white;
+    font-size: 20px;
+}
+.mov:before{
+    content: '$';
+}
+div.right{
+ flex: 1;
+ height: 300px;
+ background: var(--background_3);
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ justify-content: center;
+ padding: 30px;
+}
+
+div.right h2{
+    font-size: 40px;
+}
+
+div.data{
+    display: flex;
+    gap: 26px;
+
+
+}
+
+input{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.trans_money_btn{
+    padding: 14px 20px;
+    border-radius: 10px;
+    border:0;
+    cursor: pointer;
+}
+
+
+section.popup{
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 400px;
+    transition: all 300ms ease-in-out;
+    background: var(--background_3);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+}
+
+section.popup img.close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    cursor: pointer;
+    
+}
+
+.login_form{
+    width: 140px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+section.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
