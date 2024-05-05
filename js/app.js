@@ -2,7 +2,7 @@ let login_label = document.querySelector('.login_label');
 let popup = document.querySelector('.popup');
 let left = document.querySelector('.left');
 let closeForm = document.querySelector('.close');
-
+let welcomeName = document.querySelector('.name');
 
 let username = document.querySelector('.username');
 let pin = document.querySelector('.pin');
@@ -81,7 +81,7 @@ login_form.addEventListener('click', () => {
 
 
 function checkUser() {
-    let user_name = username.value;
+    let user_name = username.value.slice(0, 1).toUpperCase() + username.value.slice(1).toLocaleLowerCase();
     let user_pin = Number(pin.value);
 
     let checkUserCorrect = accounts.find((value) => {
@@ -96,6 +96,7 @@ function checkUser() {
             displayTotalDeposit(checkUserCorrect);
             displayTotalWithdraw(checkUserCorrect);
             displayMovements(checkUserCorrect);
+            welcomeName.textContent = user_name;
             accountTest = checkUserCorrect;
         } else {
             alert('User name or pin is incorrect');
@@ -137,7 +138,7 @@ trans_money_btn.addEventListener("click", () => {
 });
 
 function transMoney(accountTest) {
-    let user_name = transfare_to.value;
+    let user_name = transfare_to.value.slice(0, 1).toUpperCase() + transfare_to.value.slice(1).toLocaleLowerCase();
     let user_amount = Number(amount.value);
 
     let checkUserCorrect = accounts.find((value) => {
